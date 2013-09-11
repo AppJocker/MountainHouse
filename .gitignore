@@ -13,7 +13,7 @@ gen/
 *.swp
 *~.nib
 local.properties
-project.properties
+#project.properties
 proguard-project.txt
 #.classpath
 .settings/
