@@ -3,7 +3,7 @@
 #################
 
 *.pydevproject
-.project
+#.project
 .metadata
 bin/
 tmp/
@@ -15,7 +15,7 @@ gen/
 local.properties
 project.properties
 proguard-project.txt
-.classpath
+#.classpath
 .settings/
 .loadpath
 
