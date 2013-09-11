@@ -4,5 +4,8 @@
     <string name="app_name">MountainHouse</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-
+    <string name="stringFacebookLogin">Facebook 登入</string>
+    <string name="stringTwitterLogin">Twitter 登入</string><string name="stringLoginLogoContent">Betrayal at house on the hill Logo</string>
+    <string name="stringLoginBackgroundContent">Betrayal at house on the hill Background</string>
+    
 </resources>

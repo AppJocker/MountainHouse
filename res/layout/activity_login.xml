@@ -1,24 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity" >
+<?xml version="1.0" encoding="utf-8"?>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="FB登入" />
+<FrameLayout xmlns:android            = "http://schemas.android.com/apk/res/android"
+              android:layout_height    = "match_parent"
+              android:layout_width     = "match_parent"
+              android:background       = "@drawable/betrayal_at_house_on_the_hill" >
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/textView1"
-        android:text="FB登入" />
+	<LinearLayout android:layout_height    = "wrap_content"
+	              android:layout_width     = "wrap_content"
+	              android:orientation      = "vertical"
+	              android:layout_gravity   = "bottom|center_horizontal" >
 
-</RelativeLayout>
+		<Button android:id               = "@+id/buttonFacebookLogin"
+		        android:layout_height    = "wrap_content"
+		        android:layout_width     = "match_parent"		        		        
+		        android:layout_gravity   = "center"
+		        android:text             = "@string/stringFacebookLogin" />
+
+		<Button android:id               = "@+id/buttonTwitterLogin"
+		        android:layout_height    = "wrap_content"
+		        android:layout_width     = "match_parent"		        		        
+		        android:layout_gravity   = "center"
+		        android:text             = "@string/stringTwitterLogin"
+		        android:enabled          = "false" />
+
+	</LinearLayout>
+
+</FrameLayout>
