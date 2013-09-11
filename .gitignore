@@ -13,6 +13,8 @@ gen/
 *.swp
 *~.nib
 local.properties
+project.properties
+proguard-project.txt
 .classpath
 .settings/
 .loadpath
