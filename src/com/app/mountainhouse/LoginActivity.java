@@ -5,7 +5,6 @@ package com.app.mountainhouse ;
 import android.os.Bundle      ;
 import android.os.Handler;
 import android.app.Activity   ;
-import android.util.Log;
 import android.view.View      ;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -15,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.content.Intent ;
 import android.graphics.drawable.AnimationDrawable;
-
 
 public class LoginActivity extends Activity
 {
@@ -66,9 +64,9 @@ public class LoginActivity extends Activity
 					}	
 				}*/
 				 
-				/*Intent intent = new Intent() ;
+				Intent intent = new Intent() ;
 				intent.setClass( LoginActivity.this , LobbyActivity.class ) ;
-				startActivity( intent ) ;*/
+				startActivity( intent ) ;
 				//LoginActivity.this.finish() ;	
 			}
 		}) ;		
@@ -130,9 +128,7 @@ public class LoginActivity extends Activity
 		 			    IconImage.startAnimation(ta2);
 		            }
 		        }, 3000);
-			    
-				// 當動畫結束時設定各個畫面
-			}
+		    }
 
 			@Override
 			public void onAnimationRepeat(Animation animation) {}
