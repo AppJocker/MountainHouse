@@ -27,7 +27,7 @@
         <activity android:name="com.app.mountainhouse.LobbyActivity"></activity>
         <activity android:name="com.app.mountainhouse.EventActivity"></activity>
         <activity android:name="com.app.mountainhouse.MapActivity"></activity>
-        <activity android:name="com.app.mountainhouse.RegisterActivity"></activity>
+        <activity android:name="com.app.mountainhouse.RolecreateActivity"></activity>
         <activity android:name="com.app.mountainhouse.RoomActivity"></activity>
         <activity android:name="com.app.mountainhouse.StatusActivity"></activity>
         <activity android:name="com.app.mountainhouse.StoryActivity"></activity>

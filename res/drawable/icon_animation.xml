@@ -2,15 +2,5 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:oneshot="true"
   >
-  <item android:drawable="@drawable/suckmyduck_1" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_2" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_3" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_4" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_5" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_6" android:duration="1300" />
-  <item android:drawable="@drawable/suckmyduck_5" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_4" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_3" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_2" android:duration="150" />
-  <item android:drawable="@drawable/suckmyduck_1" android:duration="150" />
+  <item android:drawable="@drawable/appjockers_7" android:duration="150" />
 </animation-list>
