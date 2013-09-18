@@ -7,5 +7,16 @@
     <string name="stringFacebookLogin">Facebook 登入</string>
     <string name="stringTwitterLogin">Twitter 登入</string><string name="stringLoginLogoContent">Betrayal at house on the hill Logo</string>
     <string name="stringLoginBackgroundContent">Betrayal at house on the hill Background</string>
+    <string name="levelLabel">level</string>
+    <string name="gamerole">gameRole</string>
+    <string name="setting">設定</string>
+    <string name="settingBtnClick">settingClick</string>
+    <string name="newsBtn">News</string>
+    <string name="infoBtn">狀態</string>
+    <string name="friendListBtn">好友</string>
+    <string name="itemBtn">物品</string>
+    <string name="stageBtn">關卡</string>
+    <string name="shoppingBtn">商城</string>
+    <string name="startGameBtn">遊戲開始</string>
     
 </resources>

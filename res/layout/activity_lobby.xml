@@ -2,22 +2,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="@string/settingBtnClick"
     tools:context=".LoginActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="大廳" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
 
-    <Button
-        android:id="@+id/button_joinroom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="進入房間" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/idLabel"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame" />
+
+            <TextView
+                android:id="@+id/moneyLabel"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame" />
+
+            <Button
+                android:id="@+id/settingButtom"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:onClick="@string/settingBtnClick"
+                android:text="@string/setting" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/levelExp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/linearLayout2" >
+
+		        <TextView
+		            android:id="@+id/levelText"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" />
+
+		        <com.app.mountainhouse.MyProgress
+		            android:id="@+id/levelExpBar"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:max="100" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/levelExp"
+		        android:layout_centerHorizontal="true" >
+
+		        <Button
+		            android:id="@+id/newsBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/newsBtn" />
+
+		        <Button
+		            android:id="@+id/infoBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/infoBtn" />
+
+		        <Button
+		            android:id="@+id/friendListBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/friendListBtn" />
+
+		        <Button
+		            android:id="@+id/itemBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/itemBtn" />
+
+		        <Button
+		            android:id="@+id/stageBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/stageBtn" />
+
+		        <Button
+		            android:id="@+id/shoppingBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/shoppingBtn" />
+		    </LinearLayout>
+
+		    <Button
+		        android:id="@+id/startGameBtn"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/startGameBtn" />
+            
 </RelativeLayout>
