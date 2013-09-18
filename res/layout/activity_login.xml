@@ -5,11 +5,11 @@
     android:background="#000000" >
 
     <ImageView
-	    android:id="@+id/HouseImageView"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:scaleType="centerCrop"
-	    android:visibility="invisible" />
+        android:id="@+id/HouseImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
     	
 	<LinearLayout android:id			   = "@+id/LoginMenuView"
 	    		  android:layout_height    = "wrap_content"
