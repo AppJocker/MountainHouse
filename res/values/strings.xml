@@ -18,5 +18,11 @@
     <string name="stageBtn">關卡</string>
     <string name="shoppingBtn">商城</string>
     <string name="startGameBtn">遊戲開始</string>
+    <string name="newsBtnClick">newsBtnClick</string>
+    <string name="infoBtnClick">infoBtnClick</string>
+    <string name="friendListBtnClick">friendListBtnClick</string>
+    <string name="itemBtnClick">itemBtnClick</string>
+    <string name="stageBtnClick">stageBtnClick</string>
+    <string name="shoppingBtnClick">shoppingBtnClick</string>
     
 </resources>

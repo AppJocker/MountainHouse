@@ -37,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:onClick="@string/settingBtnClick"
                 android:text="@string/setting" />
-            
         </LinearLayout>
 
         <LinearLayout
@@ -49,80 +48,99 @@
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon"/>
-
+                android:src="@drawable/icon" />
         </LinearLayout>
     </LinearLayout>
 
-		    <LinearLayout
-		        android:id="@+id/levelExp"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_alignParentLeft="true"
-		        android:layout_below="@+id/linearLayout2" >
+    <LinearLayout
+        android:id="@+id/levelExp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2" >
 
-		        <TextView
-		            android:id="@+id/levelText"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent" />
+        <TextView
+            android:id="@+id/levelText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
 
-		        <com.app.mountainhouse.MyProgress
-		            android:id="@+id/levelExpBar"
-		            style="?android:attr/progressBarStyleHorizontal"
-		            android:layout_width="fill_parent"
-		            android:layout_height="wrap_content"
-		            android:max="100" />
-		    </LinearLayout>
+        <com.app.mountainhouse.MyProgress
+            android:id="@+id/levelExpBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+    </LinearLayout>
 
-		    <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/levelExp"
-		        android:layout_centerHorizontal="true" >
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/levelExp"
+        android:layout_centerHorizontal="true" >
 
-		        <Button
-		            android:id="@+id/newsBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/newsBtn" />
+        <Button
+            android:id="@+id/newsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/newsBtnClick"
+            android:text="@string/newsBtn" />
 
-		        <Button
-		            android:id="@+id/infoBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/infoBtn" />
+        <Button
+            android:id="@+id/infoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/infoBtnClick"
+            android:text="@string/infoBtn" />
 
-		        <Button
-		            android:id="@+id/friendListBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/friendListBtn" />
+        <Button
+            android:id="@+id/friendListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/friendListBtnClick"
+            android:text="@string/friendListBtn" />
 
-		        <Button
-		            android:id="@+id/itemBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/itemBtn" />
+        <Button
+            android:id="@+id/itemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/itemBtnClick"
+            android:text="@string/itemBtn" />
 
-		        <Button
-		            android:id="@+id/stageBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/stageBtn" />
+        <Button
+            android:id="@+id/stageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/stageBtnClick"
+            android:text="@string/stageBtn" />
 
-		        <Button
-		            android:id="@+id/shoppingBtn"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:text="@string/shoppingBtn" />
-		    </LinearLayout>
+        <Button
+            android:id="@+id/shoppingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@string/shoppingBtnClick"
+            android:text="@string/shoppingBtn" />
 
-		    <Button
-		        android:id="@+id/startGameBtn"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_alignParentBottom="true"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/startGameBtn" />
-            
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/startGameBtn" />
+
+    <LinearLayout
+        android:id="@+id/lobby_main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startGameBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
 </RelativeLayout>
