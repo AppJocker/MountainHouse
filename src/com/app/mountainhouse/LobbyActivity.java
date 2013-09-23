@@ -23,7 +23,7 @@ public class LobbyActivity extends Activity {
 	private int moneyNum = 99999;
 	
 	protected static final int MENU_ABOUT = Menu.FIRST;
-	protected static final int MENU_Quit = Menu.FIRST+1;	
+	protected static final int MENU_Quit = Menu.FIRST+1;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class LobbyActivity extends Activity {
 		setContentView(R.layout.activity_lobby);
 		setUserInfo();
 		
+		/*
 		Button settingBtn = (Button)findViewById(R.id.settingButtom);
 		settingBtn.setOnClickListener(new Button.OnClickListener() {
 
@@ -40,11 +41,12 @@ public class LobbyActivity extends Activity {
 			}
 			
 		});
-		
+		*/
 		
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View view = inflater.inflate(R.layout.lobby_news_layout, null, true);
+		main_layout.removeAllViews();
 		main_layout.addView(view);
 	} // onCreate()
 	
@@ -63,58 +65,63 @@ public class LobbyActivity extends Activity {
 
 	} //setUserInfo()
 	
+	public void settingClick(View cvView)
+	{
+		openOptionsDialog();
+	}
+	
 	public void newsBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_news_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);		
+		View mainView = inflater.inflate(R.layout.lobby_news_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);
 	}
 	
 	public void infoBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_info_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);		
+		View mainView = inflater.inflate(R.layout.lobby_info_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);
 	}
 	
 	public void friendListBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_friendlist_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);		
+		View mainView = inflater.inflate(R.layout.lobby_friendlist_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);		
 	}
 	
 	public void itemBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_item_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);
+		View mainView = inflater.inflate(R.layout.lobby_item_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);
 	}
 	
 	public void stageBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_stage_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);		
+		View mainView = inflater.inflate(R.layout.lobby_stage_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);
 	}
 	
 	public void shoppingBtnClick(View cvView)
 	{
 		LinearLayout main_layout = (LinearLayout)findViewById(R.id.lobby_main_layout);
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.lobby_shopping_layout, null, true);
-		main_layout.removeAllViewsInLayout();
-		main_layout.addView(view);		
+		View mainView = inflater.inflate(R.layout.lobby_shopping_layout, null, true);
+		main_layout.removeAllViews();
+		main_layout.addView(mainView);		
 	}
 	
 	@Override
@@ -184,7 +191,7 @@ public class LobbyActivity extends Activity {
 			});
 		
 		dialog.show();
-	} // openOptionsDialog()
+	} // openAboutDialog()
 	
 }
 

@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="@string/settingBtnClick"
                 android:text="@string/setting" />
+
         </LinearLayout>
 
         <LinearLayout
