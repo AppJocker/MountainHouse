@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.mountainhouse"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/betrayal_at_house_on_the_hill"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.app.mountainhouse.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.mountainhouse.LobbyActivity"></activity>
+        <activity android:name="com.app.mountainhouse.EventActivity"></activity>
+        <activity android:name="com.app.mountainhouse.MapActivity"></activity>
+        <activity android:name="com.app.mountainhouse.RolecreateActivity"></activity>
+        <activity android:name="com.app.mountainhouse.RoomActivity"></activity>
+        <activity android:name="com.app.mountainhouse.StatusActivity"></activity>
+        <activity android:name="com.app.mountainhouse.StoryActivity"></activity>
+        <activity android:name="com.app.mountainhouse.TaskActivity"></activity>
+    </application>
+
+</manifest>
